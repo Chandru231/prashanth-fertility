@@ -580,6 +580,10 @@ body {
 
 /* ================= MEDIA QUERIES ================= */
 @media (max-width: 900px) {
+    .logo-link {
+        margin-left: -10px;
+    }
+    
     .menu-btn {
         display: flex; 
         z-index: 1001; 
