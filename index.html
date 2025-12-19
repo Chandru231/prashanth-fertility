@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prashanth Fertility | Nellore</title>
+  <link rel="icon" type="image/png" href="assets/images/navbar logo.png">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
@@ -20,13 +21,16 @@
 <!-- ================= HEADER ================= -->
 <header class="header">
   <div class="container nav-container">
-      <a href="#" class="logo-link">
-          <img src="assets/images/navbar logo.png" alt="Prashanth Fertility Logo" class="logo" />
-          <div class="logo-text">
-              <span class="brand-name">PRASHANTH</span>
-              <span class="brand-sub">FERTILITY</span>
-          </div>
-      </a>
+    <!-- Logo (separate element, easy to resize) -->
+    <a href="#" class="logo-link">
+        <img src="assets/images/navbar logo.png" alt="Prashanth Fertility Logo" class="logo" />
+        <div class="logo-text">
+            <span class="brand-name">PRASHANTH</span>
+            <span class="brand-sub">FERTILITY</span>
+        </div>
+    </a>
+    
+    <!-- Navigation -->
     <nav class="nav-links">
         <a href="#hero">Home</a>
         <a href="#about">About</a>
@@ -54,7 +58,7 @@
             </h1>
         </div>
 
-        <!-- Center Image (Mother & Child) -->
+        <!-- Hero Image (Mother & Child) - visible on mobile -->
         <div class="hero-image-container">
             <img src="assets/images/hero1.png" alt="Mother and Child" class="hero-img" />
         </div>
@@ -70,8 +74,14 @@
                 <div class="form-group">
                     <select required>
                         <option value="" disabled selected>Choose your Preferred Location</option>
+                        <option value="chetpet">Chetpet</option>
+                        <option value="velachery">Velachery</option>
+                        <option value="kolathur">Kolathur</option>
+                        <option value="tambaram">Tambaram</option>
+                        <option value="ambattur">Ambattur</option>
+                        <option value="padur">Padur</option>
+                        <option value="ashok-nagar">Ashok Nagar</option>
                         <option value="nellore">Nellore</option>
-                        <option value="chennai">Chennai</option>
                     </select>
                 </div>
                  <div class="form-group">
@@ -110,7 +120,7 @@
                 <div class="icon-box">
                     <img src="assets/images/1.png" alt="Legacy Icon">
                 </div>
-                <p>40 years of legacy</p>
+                <p>40+ years of legacy</p>
             </div>
 
              <div class="feature-item animate-on-scroll">
@@ -238,7 +248,7 @@
                 <p style="color: #dba936; font-weight: 600;">Prashanth Fertility & Women's Centre</p>
                 <p>1st Main Road, Magunta Layout,<br>
                 Near Penchal statues, Nellore</p>
-                <p>Appointments: +91 88882 88880</p>
+                <p><span style="color: #dba936; font-weight: 600;">Appointments:</span> +91 88882 88880</p>
             </div>
         </div>
 
@@ -251,7 +261,8 @@
                 <li>Tambaram</li>
                 <li>Ambattur</li>
                 <li>Padur</li>
-                <li>Nellore</li>
+                <li>Ashok Nagar</li>
+                <li class="location-highlight">Nellore ⭐</li>
             </ul>
         </div>
 
