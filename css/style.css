@@ -41,11 +41,6 @@ body {
 
 /* ================= HEADER ================= */
 
-/* Logo Wrapper - Separate from navbar */
-.logo-wrapper {
-  display: none; /* Not used anymore */
-}
-
 .logo-link {
   display: flex;
   align-items: center;
@@ -60,14 +55,6 @@ body {
   object-fit: contain;
   /* Colorize white logo to pink/red (#E84A6A) */
   filter: brightness(0) saturate(100%) invert(42%) sepia(75%) saturate(1500%) hue-rotate(325deg) brightness(95%) contrast(95%);
-}
-
-.logo-badge {
-  height: 70px;
-  width: auto;
-  display: block;
-  object-fit: contain;
-  margin-left: 15px;
 }
 
 /* Navbar */
