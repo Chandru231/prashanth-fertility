@@ -53,8 +53,6 @@ body {
   width: auto;
   display: block;
   object-fit: contain;
-  /* Colorize white logo to pink/red (#E84A6A) */
-  filter: brightness(0) saturate(100%) invert(42%) sepia(75%) saturate(1500%) hue-rotate(325deg) brightness(95%) contrast(95%);
 }
 
 /* Navbar */
@@ -209,7 +207,7 @@ body {
 
 /* ================= HERO SECTION ================= */
 .hero-section {
-  background-image: url('../assets/images/hero.png'); 
+  background-image: url('../assets/Image Assets/Desktop/Top Banner.png'); 
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -332,7 +330,7 @@ body {
     transform: translate(-50%, -50%); 
     width: 400px; 
     height: 400px; 
-    background-image: url('../assets/images/about.png'); 
+    background-image: url('../assets/image/Logo - Emblem.svg'); 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -607,7 +605,7 @@ body {
     }
 
     .hero-section {
-        background-image: url('../assets/images/hero.png');
+        background-image: url('../assets/Image Assets/Desktop/Top Banner.png');
         background-size: 100% 100%;
         min-height: 70vh; 
         padding: 50px 0;
@@ -654,24 +652,71 @@ body {
 
 @media (max-width: 600px) {
     .hero-section {
-        background-image: none;
-        background-color: var(--primary-purple);
+        background-image: url('../assets/Image%20Assets/Mobile/Plain%20BG.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #5D2A73;
         min-height: auto;
-        padding: 40px 0;
+        padding: 50px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+    .hero-form-container {
+        display: block !important;
+        background: #fffdf7;
+        border-radius: 8px;
+        padding: 30px 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        width: 85%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .appointment-form .form-group {
+        margin-bottom: 20px;
+    }
+
+    .appointment-form input,
+    .appointment-form select {
+        border: none;
+        border-bottom: 0.5px solid rgba(0,0,0,0.2) !important;
+        padding: 8px 0;
+        font-size: 0.85rem;
+        border-radius: 0;
+    }
+
+    .appointment-form button.submit-btn {
+        background-color: #5D2A73;
+        border-radius: 6px;
+        padding: 12px;
+        font-size: 1rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin-top: 5px;
     }
 
     .hero-image-container {
-        display: block;
+        display: block !important;
+        margin-top: 0;
         text-align: center;
-        margin: 20px 0;
+        line-height: 0;
     }
 
     .hero-img {
-        max-width: 80%;
+        max-width: 100%;
         height: auto;
+        display: block;
         margin: 0 auto;
     }
-    
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
     }
