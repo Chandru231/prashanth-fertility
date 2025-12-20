@@ -707,7 +707,7 @@ body {
     .hero-image-container {
         display: block !important;
         margin-top: -60px;
-        text-align: center;
+        text-align: left;
         line-height: 0;
     }
 
@@ -715,7 +715,8 @@ body {
         max-width: 100%;
         height: auto;
         display: block;
-        margin: 0 auto;
+        margin: 0;
+        margin-left: -20px;
     }
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
