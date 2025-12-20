@@ -653,7 +653,7 @@ body {
 @media (max-width: 600px) {
     .hero-section {
         background-image: url('../assets/Image%20Assets/Mobile/Plain%20BG.jpg');
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center center;
         background-repeat: no-repeat;
         background-color: #5D2A73;
