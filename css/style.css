@@ -130,63 +130,6 @@ body {
 }
 
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 0.95;
-    margin-left: -7px;
-}
-
-.brand-name {
-    font-size: 1.6rem; 
-    font-weight: 800; 
-    color: #4A225D;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.brand-sub {
-    font-size: 1.15rem; 
-    font-weight: 400; 
-    color: #4A225D;
-    letter-spacing: 1px; 
-    text-transform: uppercase;
-    margin-top: -2px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-dark);
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--primary-purple);
-}
-
-.nav-links .nav-btn {
-    background: var(--button-purple);
-    color: var(--white) !important; /* Force white color */
-    padding: 10px 25px;
-    border-radius: 25px; 
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: background 0.3s;
-}
-
-.nav-btn:hover {
-    background: #552075;
-}
 
 .menu-btn {
   background: none;
@@ -213,7 +156,7 @@ body {
   background-repeat: no-repeat;
   color: var(--white);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding: 100px 0; 
   min-height: 85vh; 
   display: flex;
@@ -408,13 +351,18 @@ body {
 /* ================= SERVICES ("WHAT WE OFFER") ================= */
 .services-section {
     padding: 80px 0;
+    position: relative;
+    overflow: hidden;
 }
+
 
 .services-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: start;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: stretch;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .services-title {
@@ -428,19 +376,12 @@ body {
     gap: 15px;
 }
 
-.service-item {
-    border-bottom: 1px solid #eee;
-}
-
-.service-item:first-child {
-    border-top: 1px solid #eee;
-}
-
 .service-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 18px 0;
+    border-bottom: 1.5px solid #D1BFD8;
     cursor: pointer;
     font-size: 0.95rem;
     color: #333;
@@ -474,22 +415,32 @@ body {
 }
 
 .service-item .arrow {
-    font-size: 0.8rem;
-    color: #999;
+    font-size: 1.1rem;
+    color: #5D2A73;
     transition: transform 0.3s ease;
 }
 
 .service-item.active .arrow {
     transform: rotate(180deg);
-    color: var(--primary-purple);
+    color: #5D2A73;
+}
+
+.services-image {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -80px;
 }
 
 .services-image img {
     width: 100%;
-    border-radius: 10px; 
-
+    height: auto;
+    object-fit: cover;
     display: block;
+    border-radius: 20px 20px 0 0;
 }
+
+
 
 /* ================= FOOTER ================= */
 .footer {
@@ -643,14 +594,24 @@ body {
 
     .services-container {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
-    
+
+    .services-image {
+        margin-bottom: -80px;
+        margin-top: 20px;
+    }
+
+    .services-image img {
+        border-radius: 20px 20px 0 0;
+    }
+
     .footer-content {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .hero-section {
         background-image: url('../assets/Image%20Assets/Mobile/Plain%20BG.jpg');
         background-size: 100% 100%;
@@ -664,8 +625,8 @@ body {
     }
 
     .hero-text h1 {
-        font-size: 1.6rem;
-        line-height: 1.25;
+        font-size: 1.3rem;
+        line-height: 1.2;
         text-align: center;
         color: #FFFFFF;
         margin-bottom: 5px;
@@ -675,31 +636,31 @@ body {
         display: block !important;
         background: #fffdf7;
         border-radius: 8px;
-        padding: 30px 20px;
+        padding: 20px 16px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         width: 85%;
-        max-width: 340px;
+        max-width: 320px;
         margin: 0 auto;
     }
 
     .appointment-form .form-group {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
 
     .appointment-form input,
     .appointment-form select {
         border: none;
         border-bottom: 0.5px solid rgba(0,0,0,0.2) !important;
-        padding: 8px 0;
-        font-size: 0.85rem;
+        padding: 6px 0;
+        font-size: 0.8rem;
         border-radius: 0;
     }
 
     .appointment-form button.submit-btn {
         background-color: #5D2A73;
         border-radius: 6px;
-        padding: 12px;
-        font-size: 1rem;
+        padding: 10px;
+        font-size: 0.9rem;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         margin-top: 5px;
     }
