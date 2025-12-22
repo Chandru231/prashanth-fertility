@@ -108,7 +108,7 @@ body {
 
 .nav-btn {
     background: var(--button-purple);
-    color: var(--white);
+    color: var(--white) !important;
     padding: 12px 28px; 
     border-radius: 30px; 
     text-decoration: none;
